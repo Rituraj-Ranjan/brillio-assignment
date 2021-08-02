@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            padding-bottom: 10%;
+        }
+        body{
+            text-align: center;
+            border-radius: 10%;
+            border:solid  pink;
+
+            padding-bottom: 10%;
+            padding-top: 10%;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        input{
+            border-color: pink;
+            border-radius: 10%;
+        }
+        button{
+            border-radius: 20%;
+            background-color: aqua;
+            border:2px solid brown ;
+            border-style: solid;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        label{
+            color: purple;
+            font-size: 110%;
+            padding-right: 10%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <label for="var1" >Number 1</label>
+    <input type="text" name="var1" id="var1"><br><br>
+    <label for="var2">Number 2</label>
+    <input type="text" name="var2" id="var2"><br><br><br>
+    <button onclick="add(document.getElementById('var1').value,document.getElementById('var2').value)">+</button>&nbsp;&nbsp;&nbsp;
+    <button onclick="sub(document.getElementById('var1').value,document.getElementById('var2').value)">-</button>&nbsp;&nbsp;&nbsp;
+    <button onclick="mul(document.getElementById('var1').value,document.getElementById('var2').value)">x</button>&nbsp;&nbsp;&nbsp;
+    <button onclick="div(document.getElementById('var1').value,document.getElementById('var2').value)">/</button>&nbsp;&nbsp;&nbsp;
+    <script src="calculator.js">
+        
+    </script>
+</body>
+</html>
